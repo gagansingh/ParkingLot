@@ -54,4 +54,34 @@ final class ParkingLotTests: XCTestCase {
         XCTAssertEqual(lot.spotsRemaining, 11)
     }
 
+    func testContiguous() {
+        //lot with only 4 medium spaces
+        let lot = ParkingLot(smallSpaces: 0, mediumSpaces: 4, largeSpaces: 0)
+
+        //fill up the lot with cars
+        let car1 = Car()
+        let car2 = Car()
+        let car3 = Car()
+        let car4 = Car()
+        XCTAssertNoThrow(try lot.park(vehicle: car1))
+        XCTAssertNoThrow(try lot.park(vehicle: car2))
+        XCTAssertNoThrow(try lot.park(vehicle: car3))
+        XCTAssertNoThrow(try lot.park(vehicle: car4))
+
+        // unpark cars 1,3,4
+        // there will then be 3 spaces open, but a van should not be able to park
+        // since they are not contiguous
+        XCTAssertNoThrow(try lot.unpark(vehicle: car1))
+        XCTAssertNoThrow(try lot.unpark(vehicle: car3))
+        XCTAssertNoThrow(try lot.unpark(vehicle: car4))
+
+        let van = Van()
+        XCTAssertThrowsError(try lot.park(vehicle: van))
+
+        //unpark car 2
+        XCTAssertNoThrow(try lot.unpark(vehicle: car2))
+        //there should now be enough space for the van
+        XCTAssertNoThrow(try lot.park(vehicle: van))
+    }
+
 }
