@@ -1,0 +1,30 @@
+{
+  "configurations" : [
+    {
+      "id" : "46A8AEC9-2E8C-4053-8E98-C752EBD193DC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ParkingLot.xcodeproj",
+      "identifier" : "66689CCD2A4748DB0036FC50",
+      "name" : "ParkingLot"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ParkingLot.xcodeproj",
+        "identifier" : "66689CDD2A4748DC0036FC50",
+        "name" : "ParkingLotTests"
+      }
+    }
+  ],
+  "version" : 1
+}

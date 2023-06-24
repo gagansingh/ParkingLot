@@ -10,27 +10,48 @@ import XCTest
 
 final class ParkingLotTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testCount() {
+        let lot = ParkingLot(smallSpaces: 5, mediumSpaces: 5, largeSpaces: 1)
+        XCTAssertEqual(lot.totalSpots, 11)
+        XCTAssertEqual(lot.parkingLotIsEmpty, true)
+        XCTAssertEqual(lot.parkingLotIsFull, false)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testErrors() {
+        // parking in 0 init lot should throw error
+        var lot = ParkingLot(smallSpaces: 0, mediumSpaces: 0, largeSpaces: 0)
+        let motorcycle = Motorcycle()
+        XCTAssertThrowsError(try lot.park(vehicle: motorcycle))
+
+        //unparking non-parked vehicle should throw error
+        lot = ParkingLot(smallSpaces: 0, mediumSpaces: 0, largeSpaces: 0)
+        XCTAssertThrowsError(try lot.unpark(vehicle: motorcycle))
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testSimplePark() {
+        let lot = ParkingLot(smallSpaces: 5, mediumSpaces: 5, largeSpaces: 1)
+        let car = Car()
+        XCTAssertNoThrow(try lot.park(vehicle: car))
+        XCTAssertEqual(lot.parkingLotIsEmpty, false)
+        XCTAssertEqual(lot.parkingLotIsFull, false)
+        XCTAssertEqual(lot.spotsRemaining, 10)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testVan() {
+        let lot = ParkingLot(smallSpaces: 5, mediumSpaces: 5, largeSpaces: 1)
+        let van = Van()
+        XCTAssertNoThrow(try lot.park(vehicle: van))
+        XCTAssertEqual(lot.spotsRemaining, 10)
+
+        let van2 = Van()
+        XCTAssertNoThrow(try lot.park(vehicle: van2))
+        XCTAssertEqual(lot.spotsRemaining, 7)
+
+        XCTAssertNoThrow(try lot.unpark(vehicle: van))
+        XCTAssertEqual(lot.spotsRemaining, 8)
+
+        XCTAssertNoThrow(try lot.unpark(vehicle: van2))
+        XCTAssertEqual(lot.spotsRemaining, 11)
     }
 
 }

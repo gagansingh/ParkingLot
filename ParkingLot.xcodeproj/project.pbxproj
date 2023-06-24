@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6630301F2A474FAF00BCB32A /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BC61132A474E830043ADB2 /* Size.swift */; };
+		663030202A474FB300BCB32A /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BC61112A474E730043ADB2 /* Vehicles.swift */; };
+		663030222A47508700BCB32A /* ParkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663030212A47508700BCB32A /* ParkingError.swift */; };
+		663030242A47536F00BCB32A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663030232A47536F00BCB32A /* Utility.swift */; };
+		663030252A47567E00BCB32A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663030232A47536F00BCB32A /* Utility.swift */; };
+		663030272A4756C400BCB32A /* ParkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663030212A47508700BCB32A /* ParkingError.swift */; };
 		66689CD22A4748DB0036FC50 /* ParkingLotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CD12A4748DB0036FC50 /* ParkingLotApp.swift */; };
 		66689CD42A4748DB0036FC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CD32A4748DB0036FC50 /* ContentView.swift */; };
 		66689CD62A4748DC0036FC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66689CD52A4748DC0036FC50 /* Assets.xcassets */; };
 		66689CD92A4748DC0036FC50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66689CD82A4748DC0036FC50 /* Preview Assets.xcassets */; };
 		66689CE32A4748DC0036FC50 /* ParkingLotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CE22A4748DC0036FC50 /* ParkingLotTests.swift */; };
-		66689CED2A4748DC0036FC50 /* ParkingLotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CEC2A4748DC0036FC50 /* ParkingLotUITests.swift */; };
-		66689CEF2A4748DC0036FC50 /* ParkingLotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CEE2A4748DC0036FC50 /* ParkingLotUITestsLaunchTests.swift */; };
+		66689CFC2A4748F20036FC50 /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CFB2A4748F20036FC50 /* ParkingLot.swift */; };
+		66689CFD2A4748F20036FC50 /* ParkingLot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CFB2A4748F20036FC50 /* ParkingLot.swift */; };
+		66BC61122A474E730043ADB2 /* Vehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BC61112A474E730043ADB2 /* Vehicles.swift */; };
+		66BC61142A474E830043ADB2 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BC61132A474E830043ADB2 /* Size.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		663030212A47508700BCB32A /* ParkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingError.swift; sourceTree = "<group>"; };
+		663030232A47536F00BCB32A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		663030262A4756B700BCB32A /* ParkingLot.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ParkingLot.xctestplan; sourceTree = "<group>"; };
 		66689CCE2A4748DB0036FC50 /* ParkingLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66689CD12A4748DB0036FC50 /* ParkingLotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotApp.swift; sourceTree = "<group>"; };
 		66689CD32A4748DB0036FC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,8 +53,9 @@
 		66689CDE2A4748DC0036FC50 /* ParkingLotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingLotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66689CE22A4748DC0036FC50 /* ParkingLotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotTests.swift; sourceTree = "<group>"; };
 		66689CE82A4748DC0036FC50 /* ParkingLotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingLotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		66689CEC2A4748DC0036FC50 /* ParkingLotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotUITests.swift; sourceTree = "<group>"; };
-		66689CEE2A4748DC0036FC50 /* ParkingLotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66689CFB2A4748F20036FC50 /* ParkingLot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLot.swift; sourceTree = "<group>"; };
+		66BC61112A474E730043ADB2 /* Vehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicles.swift; sourceTree = "<group>"; };
+		66BC61132A474E830043ADB2 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +86,9 @@
 		66689CC52A4748DB0036FC50 = {
 			isa = PBXGroup;
 			children = (
+				663030262A4756B700BCB32A /* ParkingLot.xctestplan */,
 				66689CD02A4748DB0036FC50 /* ParkingLot */,
 				66689CE12A4748DC0036FC50 /* ParkingLotTests */,
-				66689CEB2A4748DC0036FC50 /* ParkingLotUITests */,
 				66689CCF2A4748DB0036FC50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +108,11 @@
 			children = (
 				66689CD12A4748DB0036FC50 /* ParkingLotApp.swift */,
 				66689CD32A4748DB0036FC50 /* ContentView.swift */,
+				66689CFB2A4748F20036FC50 /* ParkingLot.swift */,
+				66BC61112A474E730043ADB2 /* Vehicles.swift */,
+				66BC61132A474E830043ADB2 /* Size.swift */,
+				663030212A47508700BCB32A /* ParkingError.swift */,
+				663030232A47536F00BCB32A /* Utility.swift */,
 				66689CD52A4748DC0036FC50 /* Assets.xcassets */,
 				66689CD72A4748DC0036FC50 /* Preview Content */,
 			);
@@ -116,15 +133,6 @@
 				66689CE22A4748DC0036FC50 /* ParkingLotTests.swift */,
 			);
 			path = ParkingLotTests;
-			sourceTree = "<group>";
-		};
-		66689CEB2A4748DC0036FC50 /* ParkingLotUITests */ = {
-			isa = PBXGroup;
-			children = (
-				66689CEC2A4748DC0036FC50 /* ParkingLotUITests.swift */,
-				66689CEE2A4748DC0036FC50 /* ParkingLotUITestsLaunchTests.swift */,
-			);
-			path = ParkingLotUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663030242A47536F00BCB32A /* Utility.swift in Sources */,
+				66BC61122A474E730043ADB2 /* Vehicles.swift in Sources */,
+				66BC61142A474E830043ADB2 /* Size.swift in Sources */,
+				66689CFC2A4748F20036FC50 /* ParkingLot.swift in Sources */,
 				66689CD42A4748DB0036FC50 /* ContentView.swift in Sources */,
+				663030222A47508700BCB32A /* ParkingError.swift in Sources */,
 				66689CD22A4748DB0036FC50 /* ParkingLotApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663030252A47567E00BCB32A /* Utility.swift in Sources */,
+				663030272A4756C400BCB32A /* ParkingError.swift in Sources */,
+				663030202A474FB300BCB32A /* Vehicles.swift in Sources */,
+				66689CFD2A4748F20036FC50 /* ParkingLot.swift in Sources */,
+				6630301F2A474FAF00BCB32A /* Size.swift in Sources */,
 				66689CE32A4748DC0036FC50 /* ParkingLotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,8 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66689CED2A4748DC0036FC50 /* ParkingLotUITests.swift in Sources */,
-				66689CEF2A4748DC0036FC50 /* ParkingLotUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
