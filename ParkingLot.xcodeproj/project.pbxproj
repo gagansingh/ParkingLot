@@ -13,6 +13,7 @@
 		663030242A47536F00BCB32A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663030232A47536F00BCB32A /* Utility.swift */; };
 		663030252A47567E00BCB32A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663030232A47536F00BCB32A /* Utility.swift */; };
 		663030272A4756C400BCB32A /* ParkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663030212A47508700BCB32A /* ParkingError.swift */; };
+		663030292A475DA500BCB32A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 663030282A475DA500BCB32A /* README.md */; };
 		66689CD22A4748DB0036FC50 /* ParkingLotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CD12A4748DB0036FC50 /* ParkingLotApp.swift */; };
 		66689CD42A4748DB0036FC50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66689CD32A4748DB0036FC50 /* ContentView.swift */; };
 		66689CD62A4748DC0036FC50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66689CD52A4748DC0036FC50 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		663030212A47508700BCB32A /* ParkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingError.swift; sourceTree = "<group>"; };
 		663030232A47536F00BCB32A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		663030262A4756B700BCB32A /* ParkingLot.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ParkingLot.xctestplan; sourceTree = "<group>"; };
+		663030282A475DA500BCB32A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		66689CCE2A4748DB0036FC50 /* ParkingLot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingLot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66689CD12A4748DB0036FC50 /* ParkingLotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingLotApp.swift; sourceTree = "<group>"; };
 		66689CD32A4748DB0036FC50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		66689CC52A4748DB0036FC50 = {
 			isa = PBXGroup;
 			children = (
+				663030282A475DA500BCB32A /* README.md */,
 				663030262A4756B700BCB32A /* ParkingLot.xctestplan */,
 				66689CD02A4748DB0036FC50 /* ParkingLot */,
 				66689CE12A4748DC0036FC50 /* ParkingLotTests */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663030292A475DA500BCB32A /* README.md in Resources */,
 				66689CD92A4748DC0036FC50 /* Preview Assets.xcassets in Resources */,
 				66689CD62A4748DC0036FC50 /* Assets.xcassets in Resources */,
 			);
